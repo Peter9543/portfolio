@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anton", sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: url(https://wallpaperaccess.com/full/347651.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+p{
+    font-size: 1 rem;
+    line-height: 1.2;
+} 
+#check{
+    display: none;
+}
+    
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-items{
+    width: 600px;
+    border: 1px solid;
+    margin: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:768px){
+    .header .icons{
+        display: flex;
+    }
+    
+    
+    p{
+        font-size: 2 rem;
+    line-height: 2;
+    }
+    .flex-container{
+        flex-wrap: wrap;
+    }
+
+    
+}
+@media (max-width:768px){
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: aquamarine;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+        text-align: center;
+        
+
+    }
+    #check:checked .navbar{
+        display: block;
+    }
+    
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: plum;
+    padding: 1.3rem 8%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+}
+.logo{
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+    font-weight: 1000;
+}
+.contents{
+    margin-top: 200px;
+}
+.navbar a{
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+@media (max-width:992px){
+    .header{
+        padding: 10px;
+    }
+}
+ .header .icons{
+    font-size:30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
